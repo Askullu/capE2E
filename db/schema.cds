@@ -14,6 +14,8 @@ namespace sap.capire.bookstore;
         books     : Association to many Books on books.author = $self;
     }
 
+    
+
     @Capabilities.Updatable: false
     entity Orders : cuid, managed {
         items    : Composition of many OrderItems on items.parent = $self;
